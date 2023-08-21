@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <script>
+
+        // String methods
+        let str = "Welcome to SIT120";
+
+        console.log("Original String:", str);
+        console.log("Length:", str.length);
+        console.log("Uppercase:", str.toUpperCase());
+        console.log("Index of 'Welcome':", str.indexOf("Welcome"));
+        console.log("Substring:", str.substring(0, 3));
+        console.log("Replace:", str.replace("SIT120", "Task 1.2P"));
+
+
+        // Number methods
+        let num = 30.120;
+
+        console.log("Original Number:", num);
+        console.log("Rounded:", Math.round(num));
+        console.log("Fixed to 2 decimals:", num.toFixed(2));
+        console.log("Absolute:", Math.abs(-5));
+        console.log("Random Number:", Math.random());
+        let numStr = "123.45";
+        console.log("Parsed Number:", parseFloat(numStr));
+
+        
+        // Array methods
+        let fruits = ["apple", "banana", "cherry", 30, 42];
+
+        console.log("Array Length:", fruits.length);
+        fruits.push("watermelon");
+        console.log("Pushed:", fruits);
+        let popped = fruits.pop();
+        console.log("Popped:", popped);
+        fruits.unshift("orange");
+        console.log("Unshifted:", fruits);
+        let shifted = fruits.shift();
+        console.log("Shifted:", shifted);
+
+       
+        // Date methods
+        let now = new Date();
+        console.log("Current Date:", now);
+
+        console.log("Year:", now.getFullYear());
+        console.log("Month:", now.getMonth());
+        console.log("Day of the Week:", now.getDay());
+        console.log("Hours:", now.getHours());
+        console.log("Formatted Date:", now.toDateString());
+
+        
+        // Function Methods
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        greet("Joe");
+
+        console.log("Is greet a function?", typeof greet === 'function');
+    </script>
+</body>
+</html>
